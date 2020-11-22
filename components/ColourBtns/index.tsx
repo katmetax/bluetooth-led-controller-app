@@ -7,8 +7,9 @@ export const ColourBtns = ({ buttonColours }) => {
     <View>
       <StyledText>Choose your colour:</StyledText>
       <Container>
-        {buttonColours.map((colour) => (
+        {buttonColours.map((colour, i) => (
           <CustomButton
+            key={i}
             onPress={() => Alert.alert(`You pressed ${colour}!`)}
             title="Press Me"
             accessibilityLabel="Click to change to blue"
@@ -22,6 +23,9 @@ export const ColourBtns = ({ buttonColours }) => {
 
 const Container = styled.View`
   flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
 `;
 
 const StyledText = styled.Text`

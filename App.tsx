@@ -23,14 +23,10 @@ const Container = styled.SafeAreaView`
 `;
 
 const StyledText = styled.Text`
-  font-size: 1.5em;
+  font-size: 20px;
   color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  display: inline;
   margin: 0px;
   padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   margin-bottom: 20px;
 `;
 
